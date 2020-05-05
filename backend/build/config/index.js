@@ -1,4 +1,4 @@
-import { config } from 'dotenv';
+"use strict";var _dotenv = require('dotenv');
 
 const env = {
   test: '.env.test',
@@ -6,6 +6,6 @@ const env = {
   development: '.env.dev'
 }
 
-config({
+_dotenv.config.call(void 0, {
   path: env[process.env.NODE_ENV]
 })
